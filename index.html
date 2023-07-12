@@ -4,90 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elue Precious| web devloper Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <!--Navbar-->
      <nav>
         <h1>Elue Precious</h1>
-        <ul>
-           <li> <a href="#about"></a>About</li>
-            <li><a href="#skills"></a>Skills</li>
-            <li><a href="#projects"></a>Project</li>
-            <li><a href="#contact"></a>Contacts</li>
+        <ul class="navigation">
+           <li><a href="#about">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#project">Project</a></li>
+           <li><a href="#contact">Contact</a></li>
+
         </ul>
     </nav>
+    
       
        <!--Hero Section-->
-         <section>
-           <img src="IMG/wfh_1.svg" alt="" loading="lazy">
+         <section class="hero" id="about">
+           <img src="IMG/wfh_1.svg" alt="" loading="lazy" class="hero-img">
             
-              <div>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit, non quas debitis minima distinctio, voluptatum nam sed sunt architecto vero. Dolorem dolores minus numquam mollitia repudiandae nobis culpa Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, minus neque! Totam, odio tenetur velit eveniet excepturi error saepe optio provident dolor quisquam est voluptate perspiciatis commodi corporis nulla sit?</p>
+
+         <div class="bio  animate__animated  animate__bounceInUp">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-test">Hello there! My name is Elue Precious and I am a Frontend developer based in Lagos, Nigeria. I am  very passionate and dedicated to my work. I have a deep desire to excel and contionously improve in my work.I am also passionate about building world class web applications. </p>
            </div>
          </section>
 
-         <section>
-            <h2>More About Me</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio asperiores labore ea, qui cumque doloremque, maxime illo sint minima voluptates repellat voluptatum assumenda dolorem eaque beatae ipsum repudiandae corporis? Animi!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat sed ducimus eos quasi, dolores in, a laborum ad, inventore amet ex dolor nulla porro reiciendis quam dolorem labore ipsam!</p>
+         <section class="services" id="services">
+            <h1 class="services-title">My Services</h1>
+            <div class="services-container animate__animated animate__pulse" >
+                <div class="service-container service-card">
+                    <img src="IMG/icons8-code-50.png" alt="" loading="lazy" class="service-pic">
+                     <h3 class="service-title">Web Development</h3>
+                     <p class="service-details">With a keen eye for design and a mastery for cutting-ede technologies, I bring your vision to life, turning ideas into immersive websites that capivate and engage.  Togther, let's redfine the boundaries of possibility in the digital world.</p>
+                 </div>
+            
+                <div class="service-container service-card">
+                    <img src="IMG/download.png" alt="" loading="lazy" class="service-pic">
+                     <h3 class="service-title">Web Design</h3>
+                      <p class="service-details">With a passion for aesthetics and a merticulous attention to detail, I specialise in crafting visually stunning web designs that trancend expections. Together, let's redefine the boundaries of visual expression in the digital realm.</p>
+            </div>
+
+            <div class="service-container service-card">
+                <img src="IMG/icons8-consultation-50.png" alt="" loading="lazy" class="service-pic">
+                <h3 class="service-title">Consultancy</h3>
+                <p class="service-details">From optimizing workflows to implementing cutting-ede solutions,  I collaborate closely with organiztions to identify their unique need and tailor comprehensive strategies that drive growth and efficiency. </p>
+            </div>
+               </div>
+
          </section>
 
-         <section>
-            <h2>My Top Skills</h2>
+         <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
 
-            <div>
-                <div>
-                    <img src="IMG/icons8-html-5.svg" alt="" loading="lazy">
-                    <img src="IMG/icons8-css3.svg" alt="" loading="lazy">
-                    <img src="IMG/icons8-javascript.svg" alt="" loading="lazy">
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__headShake" >
+                    <img src="IMG/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card">
+                    <img src="IMG/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card">
+                    <img src="IMG/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card">
                 </div>
                  
-                <div>
-                    <img src="IMG/icons8-react-native.svg" alt="" loading="lazy">
-                    <img src="IMG/icons8-bootstrap.svg" alt="" loading="lazy">
-                    <img src="IMG/icons8-git.svg" alt="" loading="lazy">
+                <div class="second-set animate__animated animate__headShake">
+                    <img src="IMG/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card">
+                    <img src="IMG/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card">
+                    <img src="IMG/icons8-git.svg" alt="" loading="lazy" class="icon icon-card">
                 </div>
             </div>
          </section>
 
 
-         <section>
-            <h2>Some of my recent project</h2>
-            <div></div>
-            <div></div>
+         <section class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent project</h2>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <img src="IMG/Product card.png" alt="" loading="lazy" class="project-pic">
+                    <h3 class="project-title">Product Preview card</h3>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sint nostrum doloribus suscipit, dolorem iusto dignissimos ad maxime, molestias hic temporibus beatae aspernatur? Quis nemo itaque sequi at, sed beatae!</p>
+                    <a href="#" target="_blank" class="project-link">Check It Out</a>
+                </div>
 
-            <h3>NFT card</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit possimus, placeat aperiam similique fuga ex incidunt dolore soluta tempora qui vitae enim velit est eveniet vero debitis perferendis. Inventore!</p>
-       </section>
+                <div class="project-container project-card">
+                    <img src="IMG/Netflix landing page clone.png" alt="" loading="lazy" class="project-pic">
+                    <h3 class="project-title">Netflix Clone</h3>
+                     <p class="project-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque facilis nihil provident dignissimos asperiores et ducimus excepturi, ratione ad a lorem et  duvimus ad maxime modi animi fugit tenetur accusamus.</p>
+                     <a href="#" target="_blank" class="project-link">Check It Out</a>
+                </div>
 
-       <section>
+                <div class="project-container project-card">
+                    <img src="IMG/Udemy clone.png" alt="" loading="lazy" class="project-pic">
+                    <h3 class="project-title">Udemy Clone</h3>
+                    <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe, est repellat voluptatem molestias eligendi iure eos perspiciatis facere, vero, tenetur odio sapiente enim doloribus error dicta assumenda eum reprehenderit.</p>
+                    <a href="#" target="_blank" class="project-link">Check It Out</a>
+                </div>
+            </div>
+
+            </section>
+
+       <section class="contact" id="contact">
         <h2>Get In Touch With Me</h2>
-        
-        <div>
-            <div>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <div class="form-control">
                 <label for="Name">Name</label>
-                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your name" class="input-field">
             </div>
-            <div>
+            <div class="form-control">
                 <label for="Email">Email</label>
-                <input type="email" placeholder="Enter your Email">
+                <input type="email" placeholder="Enter your Email" class="input-field">
             </div>
-            <div>
+            <div class="form-control">
                 <label for="Message">Message</label>
-                <textarea name="Message" id="Message" cols="50" rows="10" placeholder="Enter your Message"></textarea>
+                <textarea name="Message" id="Message" cols="50" rows="10" placeholder="Enter your Message" class="input-field"></textarea>
             </div>
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" class="submit-btn">
+        </div>
         </div>
        </section>
 
        <footer>
-        <p>Copyright 2023</p>
-        <p>Built by Elue Precious</p>
+        <p class="copy">Copyright 2023</p>
+        <p class="copy">Built by Elue Precious</p>
        </footer>
 
 
-       <!--I used Lorem as the words for now as it is still in HTNL format. I will use real words when styling them-->
 
 
 </body>
